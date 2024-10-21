@@ -4,7 +4,7 @@ html, body {
     height: 100%;
 }
 html {
-    background: url(img/baclground.jpg); 
+    background: url(img/light.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -14,7 +14,7 @@ html {
     backdrop-filter: blur(6px);
 }
 body {
-    background: url(img/baclground.jpg); 
+    background: url(img/light.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -25,6 +25,7 @@ body {
 }
 
 .background {
+    content: url(img/light.jpg);
     position: fixed; 
     top: 0;
     left: 0;
@@ -76,6 +77,28 @@ body {
 }
 
 @media(prefers-color-scheme: dark) {
-    
+    html {
+        background: url(img/drak.png); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height:100%; 
+        overflow:hidden; 
+        z-index: -2;
+        backdrop-filter: blur(6px);
+    }
+    body {
+        background: url(img/drak.png); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height:100%; 
+        overflow:hidden; 
+        z-index: -2;
+        backdrop-filter: blur(6px);
+    }
+    .background {
+        content: url(img/drak.png);
+    }
 }
     
