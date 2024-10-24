@@ -39,18 +39,17 @@ body {
 .info {
     color: white;
     display: block;
-    
     position: absolute;
     bottom: 0;
     left: 0; 
 }
 .window {
     display: flex;
-    flex: 1;
+    flex: 0.30 0.70;
     flex-direction: row;
     width: 50rem;
     height: 35rem;
-    background-color: rgb(33, 95, 95);
+    background-color: rgba(211, 222, 222, 0.2);
     /* margin: 12% auto; */
     border: 2px solid white;
     border-radius: 8px;
@@ -64,20 +63,33 @@ body {
     flex-direction: column;
     justify-content: start;
     align-items: center;
-
+    margin-right: 2rem;
 }
 .right {
     display: flex;
     flex-direction: column;
-    width: 65%;
+    width: 60%;
+    margin-left: 1rem;
+    /* margin-left: 1rem; */
     .items {
+        flex-direction: row;
         flex: 1;
         padding: 10px;
-        border: 8px solid orange;
+        border: 2px solid rgb(210, 210, 210);
         border-radius: 8px;
-        margin: 10px;
-        background-color: gray;
+        margin: 4px;
+        background-color: rgba(202, 208, 212, 0.6);
         transition: all 0.5s ease;
+        .items_div {
+            display: inline-block;
+        }
+        .item_text {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        img {
+            width: 2rem;
+        }
     }
     .items:hover {
         transform: scale(1.05);
@@ -98,6 +110,9 @@ body {
     margin-left: 4rem;
     margin-bottom: 1rem;
     transition: all 0.5s ease;
+}
+.hearimgtext {
+    color: rgb(34, 33, 32)
 }
 .test {
     text-decoration: none;
@@ -140,8 +155,27 @@ body {
     body {
         background: url(img/drak.png); 
     }
+    .window {
+        background-color: rgba(21, 20, 20, 0.6);
+    }
     .background {
         content: url(img/drak.png);
     }
+    .items_doc {
+        content: url(ico/doc/doc_drak.svg);
+        width: 1rem;
+    }
+    .items_project {
+        content: url(ico/project/project_drak.svg);
+        width: 1rem;
+    }
+    .items_contact {
+        content: url(ico/contact/contact_drak.svg);
+        width: 1rem;
+    }
+    .items_about {
+        content: url(ico/about/about_drak.svg);
+        width: 1rem;
+    }
 }
-    
+
