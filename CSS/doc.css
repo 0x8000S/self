@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+}
+/* 全局滚动条样式 */
+::-webkit-scrollbar {
+    width: 12px; /* 滚动条的宽度 */
+    height: 12px;
+  }
+  
+  /* 滚动条轨道 */
+  ::-webkit-scrollbar-track {
+    background-color: rgba(211, 222, 222, 0.6); /* 滚动条轨道的颜色 */
+  }
+  
+  /* 滚动条滑块 */
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.8); /* 滚动条滑块的颜色 */
+    border-radius: 6px; /* 滚动条滑块的圆角 */
+  }
+  
+  /* 滚动条滑块hover效果 */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #757575; /* 鼠标悬停时滚动条滑块的颜色 */
+  }
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+html {
+    background: url(../img/light.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height:100%; 
+    overflow:hidden; 
+    z-index: -2;
+    backdrop-filter: blur(6px);
+}
+body {
+    background: url(../img/light.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height:100%; 
+    overflow:hidden; 
+    z-index: -2;
+    backdrop-filter: blur(6px);
+}
+
+.background {
+    content: url(../img/light.jpg);
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); 
+    z-index: -1; 
+    pointer-events: none; 
+    filter: blur(6px);
+}
+.info {
+    color: white;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+}
+.window {
+    display: flex;
+    flex-direction: column;
+    width: 55rem;
+    height: 35rem;
+    background-color: rgba(211, 222, 222, 0.2);
+    /* margin: 12% auto; */
+    border: 2px solid white;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.box {
+    display: flex;
+    flex-direction: row;
+    
+}
+#show {
+    width: 100%;
+    height: 31rem;
+    border-radius: 8px;
+}
+.dir {
+    position: sticky;
+    left: 0;
+    top: 0;
+    padding: 10px;
+}
+.bar {
+    padding-top: 8px;
+    padding-left: 10px;
+    position: sticky;
+    top: 0;
+    background-color: rgba(211, 222, 222, 0.6);
+    z-index: 1;
+    img {
+        margin: 0;
+        width: 3rem;
+        transform: translate(4%, -4%);
+        transition: all 1s ease;
+    }
+    img:hover {
+        background-color: #757575;
+        border-radius: 8px;
+    }
+    h1 {
+        display: inline-block;
+        position: absolute;
+        top: 1;
+    }
+}
+.options {
+    color: white;
+    background-color: cornflowerblue;
+}
+.items {
+    margin: 1rem;
+    background-color: rgba(202, 208, 212, 0.6);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 8px;
+    display: block;
+    width: 100%;
+    h1 {
+        display: inline-block;
+        position: absolute;
+        top: 3;
+        font-weight: bolder;
+        margin-left: 10px;
+    }
+    hr {
+        border: 2px solid white
+    }
+    img {
+        border-radius: 4px;
+        width: 3rem;
+    }
+    .import {
+        font-weight: bold;
+    }
+}
+button {
+    background-color: rgb(15, 122, 237);
+    border: white solid 2px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    margin-left: 8px;
+    transition: all 0.5s ease;
+}
+button:hover {
+    border-color: black;
+}
+button:active {
+    transform: scale(0.5);
+}
+@media(prefers-color-scheme: dark) {
+    html {
+        background: url(../img/drak.png); 
+    }
+    body {
+        background: url(../img/drak.png); 
+    }
+    .window {
+        background-color: rgba(21, 20, 20, 0.6);
+    }
+    .background {
+        content: url(../img/drak.png);
+    }
+    .bar {
+        padding-top: 8px;
+        padding-left: 10px;
+        position: sticky;
+        top: 0;
+        background-color: rgba(21, 20, 20, 0.2);
+        img {
+            content: url(../ico/return/return_drak.svg);
+            margin: 0;
+            width: 3rem;
+            transform: translate(4%, -4%);
+        }
+    }
+    * {
+        color: white;
+    }
+    .window {
+        background-color: rgba(21, 20, 20, 0.2);
+        border: 2px solid black;
+    }
+    .items {
+        border: 2px solid rgb(0, 0, 0);
+        background-color: rgba(51, 51, 52, 0.6);
+    }
+}
+

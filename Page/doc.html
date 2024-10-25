@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN" id="root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/doc.css">
+    <script src="../main.js"></script>
+</head>
+<body>
+    <div class="window">
+        <div class="bar">
+            <img src="../ico/return/return_light.svg" alt="" onclick="jump_view('../index.html')">
+            <h1>文档</h1>
+        </div>
+        <div class="box">
+            <div class="dir">
+                <a href="#" id="C_language">C语言教程系列</a>
+            </div>
+            <iframe id="show" src=""></iframe>
+            <script>
+                var show = document.getElementById('show')
+                var C = document.getElementById('C_language')
+                C.addEventListener('click', function(){show.src = 'doc/C语言教程系列.pdf'})
+                
+            </script>
+            </div>
+    </div>
+    <div class="bg">
+        <img class="background" src="img/drak.png" alt="">
+        <div class="info">
+            <h2>The Background Image By</h2>
+            <h3>Microsoft Surface PC's Wallpaper.</h3>
+        </div>
+    </div>
+</body>
+</html>
