@@ -86,7 +86,6 @@ body {
 .box {
     display: flex;
     flex-direction: row;
-    
 }
 #show {
     width: 100%;
@@ -122,36 +121,7 @@ body {
         top: 1;
     }
 }
-.options {
-    color: white;
-    background-color: cornflowerblue;
-}
-.items {
-    margin: 1rem;
-    background-color: rgba(202, 208, 212, 0.6);
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 8px;
-    padding: 8px;
-    display: block;
-    width: 100%;
-    h1 {
-        display: inline-block;
-        position: absolute;
-        top: 3;
-        font-weight: bolder;
-        margin-left: 10px;
-    }
-    hr {
-        border: 2px solid white
-    }
-    img {
-        border-radius: 4px;
-        width: 3rem;
-    }
-    .import {
-        font-weight: bold;
-    }
-}
+
 button {
     background-color: rgb(15, 122, 237);
     border: white solid 2px;
@@ -167,6 +137,28 @@ button:hover {
 }
 button:active {
     transform: scale(0.5);
+}
+@media screen and (max-width: 900px) {
+    body {
+        overflow:auto; 
+        overflow-x: hidden;
+    }
+    .window {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        border: 0px;
+    }
+    .info {
+        z-index: -1;
+    }
+    .box {
+        flex-direction: column;
+    }
+    #show {
+        height: 60rem;
+    }
 }
 @media(prefers-color-scheme: dark) {
     html {
