@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN" id="root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/call.css">
+    <script src="../main.js"></script>
+</head>
+<body>
+    <div class="window">
+        <div class="bar">
+            <img src="../ico/return/return_light.svg" alt="" onclick="jump_view('../index.html')">
+            <h1>联系</h1>
+        </div>
+        <div class="content">
+            <div class="items">
+                <img src="../ico/call/GitHub.svg" alt="" style="background-color: white;">
+                <h1>Github</h1>
+                <h2>@0x8000S<h2>
+                <button onclick="jump_out('https://github.com/0x8000S')">访问GitHub主页</button>
+            </div>
+            <div class="items">
+                <img src="../ico/call/email.svg" alt="" style="background-color: white;">
+                <h1>电子邮箱(Email)</h1>
+                <h2>BlueRectS@outlook.com</h2>
+                <button id="send">发送邮件给我</button>
+                <script>
+                    let sendbtn = document.getElementById("send")
+                    function send() {
+                        let email = "BlueRectS@outlook.com"
+                        let subject = ''; // 邮件主题
+                        let body = ''; // 邮件正文
+                        let mailtoLink = 'mailto:' + email
+                        window.open(mailtoLink, '_blank');
+                    }
+                    sendbtn.addEventListener('click', send)
+                </script>
+            </div>
+        </div>
+        <div class="content">
+            <div class="items">
+                <img src="../ico/call/bilibili.svg" alt="" style="background-color: white;">
+                <h1>哔哩哔哩(Bilibili)</h1>
+                <h2>@氢気氚</h2>
+                <button onclick="jump_out('https://space.bilibili.com/1756213879?spm_id_from=333.1007.0.0')">访问哔哩哔哩主页</button>
+            </div>
+            <div class="items">
+                <img src="../ico/call/QQ.svg" alt="" style="background-color: white;">
+                <h1>QQ</h1>
+                <h2>481114334</h2>
+                <button id="copy">复制QQ号</button>
+                <script>
+                    let copy = document.getElementById("copy")
+                    function copy_QQ() {
+                        var textToCopy = '481114334'; // 你想要复制的文本
+                        // 创建一个临时的<textarea>元素
+                        var tempTextArea = document.createElement('textarea');
+                        tempTextArea.value = textToCopy; // 设置<textarea>的值为要复制的文本
+                        // 将<textarea>元素添加到body中
+                        document.body.appendChild(tempTextArea);
+                        // 选中<textarea>中的文本
+                        tempTextArea.select();
+                        tempTextArea.setSelectionRange(0, 99999); // 对于移动设备兼容
+                        // 执行复制命令
+                        document.execCommand('copy');
+                        // 从body中移除<textarea>元素
+                        document.body.removeChild(tempTextArea);
+                    }
+                    copy.addEventListener('click', copy_QQ)
+                </script>
+            </div>
+            
+        </div>
+    </div>
+    <div class="bg">
+        <img class="background" src="../img/drak.png" alt="">
+        <div class="info">
+            <h2>The Background Image By</h2>
+            <h3>Microsoft Surface PC's Wallpaper.</h3>
+        </div>
+    </div>
+</body>
+</html>
