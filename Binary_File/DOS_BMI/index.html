@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="window">
+        <div class="line"></div>
+        <h1>BMI Calculator</h1>
+        <form action="">
+            <h2 style="margin: 0;">Height(m)</h2>
+            <Input id="tall" placeholder="Type your hight"></Input>
+            <h2 style="margin: 0;">Weight(kg)</h2>
+            <Input id="thin" placeholder="Type your wight"></Input>
+            <br>
+            <button type="button" id="sub" class="btn" style="margin-top: 10px;"><span>C</span>alc</button>
+        </form>
+        <h2 id="show">Your BMI is </h2>
+        <h2 id="stac"></h2>
+        <script>
+            var hight = document.querySelector("#tall")
+            var wight = document.querySelector("#thin")
+            var s = document.getElementById("show")
+            var sub = document.getElementById("sub")
+            var stac = document.querySelector("#stac")
+            function show() {
+                let bmi = wight.value/(hight.value*hight.value)
+                let sc = "Your BMI is " + bmi
+                s.innerText = sc
+                s.style.color = "black"
+                if (bmi < 18.5) {
+                    stac.innerText = "Too Light"
+                    stac.style.color = 'blue'
+                }
+                else if (18.5 <= bmi && bmi < 24) {
+                    stac.innerText = "Medium"
+                    stac.style.color = 'green'
+                }
+                else if (24 <= bmi && bmi < 28) {
+                    stac.innerText = "Emphasis"
+                    stac.style.color = 'orange'
+                }
+                else if (28 <= bmi && bmi <= 34) {
+                    stac.innerText = "Obese"
+                    stac.style.color = 'yellow'
+                }
+                else if (bmi >= 34) {
+                    stac.innerText = "Very Obese"
+                    stac.style.color = 'red'
+                }
+                else {
+                    s.style.color = "red"
+                    s.innerText = "Check your type!"
+                }
+            }
+            sub.addEventListener("click", show)
+            </script>
+    </div>
+    <div class="shower"></div>
+</body>
+</html>

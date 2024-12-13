@@ -1,0 +1,141 @@
+.info {
+    color: white;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+}
+.left {
+    display: flex;
+    flex: 0.4;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-right: 1rem;
+}
+.right {
+    display: flex;
+    flex: 0.6;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 1rem;
+    padding: 1rem;
+    /* margin-left: 1rem; */
+    .items {
+        padding: 6px;
+        flex-direction: row;
+        flex: 1;
+        padding: 10px;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        margin: 4px;
+        background-color: rgba(202, 208, 212, 0.6);
+        transition: all 0.5s ease;
+        .items_div {
+            display: inline-block;
+        }
+        .item_text {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        img {
+            width: 2rem;
+        }
+    }
+    .items:hover {
+        transform: scale(1.05);
+    }
+    .items:active {
+        transform: scale(0.9);
+    }
+}
+.hearimg:hover {
+    transform: rotate(360deg) scale(1.5);
+}
+.hearimg {
+    width: 10rem;
+    border: 4px solid rgb(0, 183, 255);
+    padding: 4px;
+    border-radius: 100px;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+    transition: all 0.5s ease;
+}
+.hearimgtext {
+    color: rgb(34, 33, 32)
+}
+.test {
+    text-decoration: none;
+    transition: all 1s ease;
+}
+.test:hover {
+    transform: scale(1.5);
+    background-color: aquamarine;
+    border: 6px black solid;
+    border-radius: 8px;
+}
+
+.hearimgtext {
+    margin-left: 4rem;
+}
+@media screen and (max-width: 900px) {
+    body {
+        overflow:auto; 
+    }
+    .window {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        border: 0px;
+        overflow-x: hidden;
+    }
+    .info {
+        z-index: -1;
+    }
+}
+@media(prefers-color-scheme: dark) {
+    html {
+        background: url(../img/drak.png); 
+    }
+    body {
+        background: url(../img/drak.png); 
+    }
+    * {
+        color: white;
+    }
+    .hearimgtext {
+        color: white
+    }
+    .window {
+        background-color: rgba(21, 20, 20, 0.2);
+        /* border: 2px solid black; */
+    }
+    .background {
+        content: url(../img/drak.png);
+    }
+    .items_doc {
+        content: url(../ico/doc/doc_drak.svg);
+        width: 1rem;
+    }
+    .items_project {
+        content: url(../ico/project/project_drak.svg);
+        width: 1rem;
+    }
+    .items_contact {
+        content: url(../ico/contact/contact_drak.svg);
+        width: 1rem;
+    }
+    .items_about {
+        content: url(../ico/about/about_drak.svg);
+        width: 1rem;
+    }
+    .right{
+        .items {
+            /* border: 2px solid rgb(0, 0, 0); */
+            background-color: rgba(51, 51, 52, 0.4);
+        }
+    }
+}
+

@@ -53,7 +53,7 @@ body {
     height: 35rem;
     background-color: rgba(211, 222, 222, 0.2);
     /* margin: 12% auto; */
-    border: 2px solid white;
+    border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 8px;
     position: absolute;
     top: 50%;
@@ -91,23 +91,6 @@ body {
     flex-direction: column;
     h1 {
         margin: 10px;
-    }
-}
-.items {
-    margin: 1rem;
-    background-color: rgba(202, 208, 212, 0.6);
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 8px;
-    padding: 8px;
-    display: block;
-    width: 100%;
-    justify-items: center;
-    img {
-        border-radius: 4px;
-        width: 3rem;
-    }
-    .import {
-        font-weight: bold;
     }
 }
 button {
@@ -189,10 +172,10 @@ button:active {
     }
     .window {
         background-color: rgba(21, 20, 20, 0.2);
-        border: 2px solid black;
+        border: 2px solid rgba(255, 255, 255, 0.2);
     }
     .items {
-        border: 2px solid rgb(0, 0, 0);
+        border: 2px solid rgba(255, 255, 255, 0.4);
         background-color: rgba(51, 51, 52, 0.6);
     }
 }

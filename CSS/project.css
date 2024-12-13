@@ -1,27 +1,7 @@
 * {
     margin: 0;
 }
-/* 全局滚动条样式 */
-::-webkit-scrollbar {
-    width: 12px; /* 滚动条的宽度 */
-    height: 12px;
-  }
-  
-  /* 滚动条轨道 */
-  ::-webkit-scrollbar-track {
-    background-color: rgba(211, 222, 222, 0.6); /* 滚动条轨道的颜色 */
-  }
-  
-  /* 滚动条滑块 */
-  ::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.8); /* 滚动条滑块的颜色 */
-    border-radius: 6px; /* 滚动条滑块的圆角 */
-  }
-  
-  /* 滚动条滑块hover效果 */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #757575; /* 鼠标悬停时滚动条滑块的颜色 */
-  }
+
 html, body {
     margin: 0;
     padding: 0;
@@ -74,7 +54,6 @@ body {
     height: 35rem;
     background-color: rgba(211, 222, 222, 0.2);
     /* margin: 12% auto; */
-    border: 2px solid white;
     border-radius: 8px;
     position: absolute;
     top: 50%;
@@ -114,8 +93,8 @@ body {
 }
 .items {
     margin: 1rem;
-    background-color: rgba(202, 208, 212, 0.6);
-    border: 2px solid rgb(255, 255, 255);
+    background-color: rgba(202, 208, 212, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 8px;
     padding: 8px;
     display: block;
@@ -128,7 +107,7 @@ body {
         margin-left: 10px;
     }
     hr {
-        border: 2px solid white
+        border: 2px solid rgba(255, 255, 255, 0.4)
     }
     img {
         border-radius: 4px;
@@ -227,11 +206,12 @@ button:active {
     }
     .window {
         background-color: rgba(21, 20, 20, 0.2);
-        border: 2px solid black;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+
     }
     .items {
-        border: 2px solid rgb(0, 0, 0);
-        background-color: rgba(51, 51, 52, 0.6);
+        background-color: rgba(21, 20, 20, 0.4);
+        border: 2px solid rgba(255, 255, 255, 0.2);
     }
 }
 
