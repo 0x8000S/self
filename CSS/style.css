@@ -48,6 +48,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px black;
 }
 button {
     background-color: rgb(15, 122, 237);
@@ -94,6 +95,7 @@ button:active {
     .window {
         background-color: rgba(21, 20, 20, 0.2);
         /* border: 2px solid black; */
+        box-shadow: 0 0 10px white;
     }
     .background {
         content: url(../img/drak.png);

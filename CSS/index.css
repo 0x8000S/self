@@ -79,16 +79,6 @@
 .hearimgtext {
     color: rgb(34, 33, 32)
 }
-.test {
-    text-decoration: none;
-    transition: all 1s ease;
-}
-.test:hover {
-    transform: scale(1.5);
-    background-color: aquamarine;
-    border: 6px black solid;
-    border-radius: 8px;
-}
 
 .hearimgtext {
     margin-left: 4rem;

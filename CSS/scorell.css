@@ -13,3 +13,19 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #757575; /* 鼠标悬停时滚动条滑块的颜色 */
   }
+  @media screen and (max-width: 900px) {
+    ::-webkit-scrollbar {
+      width: 2px; /* 滚动条的宽度 */
+      height: 12px;
+    }
+    /* 滚动条滑块 */
+    ::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.8); /* 滚动条滑块的颜色 */
+      border-radius: 6px; /* 滚动条滑块的圆角 */
+    }
+    
+    /* 滚动条滑块hover效果 */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #757575; /* 鼠标悬停时滚动条滑块的颜色 */
+    }
+}
