@@ -5,6 +5,20 @@
     bottom: 0;
     left: 0; 
 }
+.window {
+    display: flex;
+    flex-direction: row;
+    width: 55rem;
+    height: 35rem;
+    background-color: rgba(211, 222, 222, 0.3);
+    /* margin: 12% auto; */
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .left {
     display: flex;
     flex: 0.4;
