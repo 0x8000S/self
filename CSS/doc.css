@@ -15,7 +15,6 @@ html {
     height:100%; 
     overflow:hidden; 
     z-index: -2;
-    backdrop-filter: blur(6px);
 }
 body {
     background: url(../img/light.jpg); 
@@ -25,7 +24,6 @@ body {
     height:100%; 
     overflow:hidden; 
     z-index: -2;
-    backdrop-filter: blur(6px);
 }
 
 .background {
@@ -38,7 +36,6 @@ body {
     background-color: rgba(255, 255, 255, 0.5); 
     z-index: -1; 
     pointer-events: none; 
-    filter: blur(6px);
 }
 .info {
     color: white;
@@ -62,6 +59,7 @@ body {
     transform: translate(-50%, -50%);
     overflow-y: scroll;
     overflow-x: hidden;
+    backdrop-filter: blur(10px);
 }
 .box {
     display: flex;
