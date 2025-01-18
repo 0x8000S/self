@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body {
+    background-color: #b9dced;
+    color: black;
+    width: 100%;
+}
+.back {
+    /* display: inline-block; */
+    padding: 10px;
+    background-color: aliceblue;
+    width: 100%;
+    height: auto;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    a {
+        display: inline-block;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: xx-large;
+        color: black;
+        padding: 6px;
+        width: auto;
+        transition: all 0.5s ease-in-out;
+    }
+    a:hover {
+        display: inline-block;
+        background-color: #b9dced;
+        width: auto;
+        padding: 6px;
+        border-radius: 8px;
+        color: aliceblue;
+    }
+}
+.window {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 8px;
+    transition: all 1s ease-in-out;
+}
+
+input {
+    outline: none;
+    border: 2px white solid;
+    border-radius: 2px;
+    font-size: large;
+    font-weight: bolder;
+    padding: 2px;
+    transition: all 0.5s ease-in-out;
+}
+input:hover {
+    border-bottom: 2px royalblue solid;
+}
+input:focus {
+    border: 2px royalblue solid;
+}
+h3 {
+    margin: 2px;
+    padding: 2px;
+}
+button {
+    margin-top: 20px;
+    outline: none;
+    font-size: large;
+    font-weight: bolder;
+    border: 2px cornflowerblue solid;
+    border-radius: 2px;
+    background-color: cornflowerblue;
+    color: aliceblue;
+    padding: 2px;
+    transition: all 0.5s ease-in-out;
+}
+button:hover {
+    border: 2px azure solid;
+    border-radius: 2px;
+}
+button:active {
+    background-color: rgb(87, 130, 210);
+}
+
+.show {
+    position: absolute;
+    height: 6rem;
+    width: 16.5rem;
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 8px;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    /* opacity: 0; */
+    h1 {
+        margin: 2px;
+        padding: 2px;
+    }
+    #BMIShow {
+        color: #7e8282;
+    }
+    transition: all 1s ease-in-out;
+}
