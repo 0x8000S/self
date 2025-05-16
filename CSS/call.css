@@ -131,10 +131,11 @@ body {
         flex-direction: column;
     }
     .items {
-        margin: 1rem;
+        margin: auto;
+        margin-top: 1rem;
         padding: 8px;
         display: block;
-        width: 100%;
+        width: 90%;
         img {
             border-radius: 4px;
             width: 3rem;
