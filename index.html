@@ -14,7 +14,7 @@
         <div class="left">
             <img class="hearimg" src="img/LoGo.png" alt="">
             <h1 class="hearimgtext">氢気氚|qinch</h1>
-            <span class="hearimgtext">这是一个普通的个人网站...</span>
+            <span class="hearimgtext" id="everyText" style="text-align: center;">这是一个普通的个人网站...</span>
             <a href="Page/tools.html" id="tools">小工具</a>
         </div>
         <div class="right">
@@ -55,5 +55,17 @@
             <h3>Microsoft Surface PC's Wallpaper.</h3>
         </div>
     </div>
+    <script>
+        let returnText = ""
+        fetch('https://v1.xqapi.com/v1.php?y=sm&type=json')
+            .then(response => response.json())
+            .then(data => {
+                returnText = data;
+                console.log(data);
+                let text = document.querySelector("#everyText")
+                text.innerHTML = data.text
+            })
+            .catch(console.error);
+    </script>
 </body>
 </html>
