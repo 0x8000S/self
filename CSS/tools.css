@@ -68,22 +68,23 @@ body {
     top: 0;
     background-color: rgba(211, 222, 222, 0.6);
     z-index: 1;
-    img {
-        margin: 0;
-        width: 3rem;
-        transform: translate(4%, -4%);
-        transition: all 1s ease;
-    }
-    img:hover {
-        background-color: #757575;
-        border-radius: 8px;
-    }
-    h1 {
-        display: inline-block;
-        position: absolute;
-        top: 1;
-    }
 }
+#back {
+    margin: 0;
+    width: 3rem;
+    transform: translate(4%, -4%);
+    transition: all 1s ease;
+}
+#back:hover {
+    background-color: #757575;
+    border-radius: 8px;
+}
+#title {
+    display: inline-block;
+    position: absolute;
+    top: 1;
+}
+
 .content {
     /* display: grid;
     grid-template-rows: repeat(2, 1fr); /* 定义三列，每列等宽 
@@ -99,23 +100,24 @@ body {
     display: block;
     width: 100%;
     height: auto;
-    h1 {
+    
+}
+h1 {
         display: inline-block;
         
         top: 3;
         font-weight: bolder;
         margin-left: 10px;
-    }
-    hr {
-        border: 2px solid rgba(255, 255, 255, 0.4)
-    }
-    img {
-        border-radius: 4px;
-        width: 3rem;
-    }
-    .import {
-        font-weight: bold;
-    }
+}
+hr {
+    border: 2px solid rgba(255, 255, 255, 0.4)
+}
+img {
+    border-radius: 4px;
+    width: 3rem;
+}
+.import {
+    font-weight: bold;
 }
 
 @media screen and (max-width: 900px) {

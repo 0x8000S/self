@@ -36,7 +36,8 @@ html {
     justify-content: start;
     align-items: center;
     margin-right: 1rem;
-    #tools {
+}
+#tools {
         
         text-decoration: none;
         color: black;
@@ -49,10 +50,9 @@ html {
         text-align: center;
         font-weight: bold;
         transition: all 0.5s ease-in-out;
-    }
-    #tools:hover {
-        background-color: rgba(202, 208, 212, 0.6);
-    }
+}
+#tools:hover {
+    background-color: rgba(202, 208, 212, 0.6);
 }
 .right {
     display: flex;
@@ -62,7 +62,9 @@ html {
     margin-left: 1rem;
     padding: 1rem;
     /* margin-left: 1rem; */
-    .items {
+}
+
+.items {
         padding: 6px;
         flex-direction: row;
         flex: 1;
@@ -72,23 +74,24 @@ html {
         margin: 4px;
         background-color: rgba(202, 208, 212, 0.6);
         transition: all 0.5s ease;
-        .items_div {
+}
+
+.items_div {
             display: inline-block;
-        }
-        .item_text {
+}
+
+.item_text {
             margin-top: 0;
             margin-bottom: 0;
-        }
-        img {
+}
+.item {
             width: 2rem;
-        }
-    }
-    .items:hover {
+}
+.items:hover {
         transform: scale(1.05);
-    }
-    .items:active {
-        transform: scale(0.9);
-    }
+}
+.items:active {
+    transform: scale(0.9);
 }
 .hearimg:hover {
     transform: rotate(360deg) scale(1.5);
