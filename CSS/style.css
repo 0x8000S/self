@@ -53,6 +53,7 @@ body {
 }
 .bar {
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* 针对苹果浏览器设置模糊 */
 }
 button {
     background-color: rgb(15, 122, 237);
