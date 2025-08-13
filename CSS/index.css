@@ -185,19 +185,19 @@ html {
     }
     .items_doc {
         content: url(../ico/doc/doc_drak.svg);
-        width: 1rem;
+        width: 2rem;
     }
     .items_project {
         content: url(../ico/project/project_drak.svg);
-        width: 1rem;
+        width: 2rem;
     }
     .items_contact {
         content: url(../ico/contact/contact_drak.svg);
-        width: 1rem;
+        width: 2rem;
     }
     .items_about {
         content: url(../ico/about/about_drak.svg);
-        width: 1rem;
+        width: 2rem;
     }
     .right{
         .items {
