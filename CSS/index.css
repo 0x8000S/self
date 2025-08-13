@@ -87,6 +87,18 @@ html {
 .item {
             width: 2rem;
 }
+.items_doc {
+    width: 2rem;
+}
+.items_project {
+    width: 2rem;
+}
+.items_contact {
+    width: 2rem;
+}
+.items_about {
+    width: 2rem;
+}
 .items:hover {
         transform: scale(1.05);
 }
