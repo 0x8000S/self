@@ -111,5 +111,8 @@ button:active {
     .background {
         content: url(../img/drak.png);
     }
+    #back {
+        content: url(../ico/return/return_drak.svg);
+    }
 }
 
